@@ -629,7 +629,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: redis:alpine
+        image: public.ecr.aws/s0m1p6x7/kelnerhax/redis:alpine
         ports:
         - containerPort: 6379
         readinessProbe:
@@ -722,7 +722,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: busybox:latest
+        image: public.ecr.aws/s0m1p6x7/kelnerhax/busybox:latest
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
